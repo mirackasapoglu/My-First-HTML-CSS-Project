@@ -1,0 +1,292 @@
+body 
+{
+ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0 auto;
+  width:0 10;
+  line-height: 1.6;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255, 230, 0);
+  text-decoration:none;
+  box-sizing: border-box;
+  height:100%;
+}
+ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li
+{
+    list-style: none;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+ul li a
+{
+    display: block;
+    position:relative;
+    margin-top: 20px;
+    right: -20px;
+    text-decoration:none;
+    padding: 5px;
+    font-size: 18px;
+    color: #808080;
+    text-transform: uppercase;
+    transition: 0.5s;
+    }
+    ul:hover li a
+    {
+        transform: scale(1.5);
+        opacity: .2;
+        filter: blur(5px);
+    }
+    ul li a:hover
+    {
+        transform: scale(2);
+        opacity: 1;
+        filter: blur(0);
+    }
+    ul li a:before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background:#808080;
+        transition: transform 0.5s;
+        transform-origin: right;
+        transform: scaleX(0);
+        z-index: -1;
+    }
+    ul li a:hover:before
+    {
+        transition: transform 0.5s;
+        transform-origin: left;
+        transform: scaleX(0);
+    }
+    
+    <!-- sosyal medya-->
+
+    .sosyal ul
+{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sosyal ul li
+{
+    list-style: none;
+}
+.sosyal ul li a
+{
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align:center;
+    text-decoration: none;
+    color: #262626;
+    margin: 0 10px;
+    transition: .5s;
+}
+.sosyal ul li a span
+{
+    position: absolute;
+    transition: transform .5s;
+}
+.sosyal ul li a span:nth-child(1),
+.sosyal ul li a span:nth-child(3)
+{
+    width: 100%;
+    height: 1px;
+    background: #262626;
+}
+.sosyal ul li a span:nth-child(1)
+{
+    top: 0;
+    left: 0;
+    transform-origin: right;
+}
+.sosyal ul li a:hover span:nth-child(1)
+{
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .5s;
+}
+.sosyal ul li a span:nth-child(3)
+{
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+.sosyal ul li a:hover span:nth-child(3)
+{
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .5s;
+}
+
+
+.sosyal ul li a span:nth-child(2),
+.sosyal ul li a span:nth-child(4)
+{
+    width: 1px;
+    height: 100%;
+    background: #262626;
+}
+.sosyal ul li a span:nth-child(2)
+{
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+.sosyal ul li a:hover span:nth-child(2)
+{
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .5s;
+}
+.sosyal ul li a span:nth-child(4)
+{
+    top: 0;
+    right: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.sosyal ul li a:hover span:nth-child(4)
+{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform .5s;
+}
+
+
+
+    section
+{
+	position: relative;
+	width: 100%;
+	height: 100vh;
+}
+section video
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 90%;
+object-fit: cover;
+}
+section .navigation
+{
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+section .navigation li
+{
+	list-style: none;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 4px;
+	background: #fff;
+	padding: 3px 3px 0;
+	opacity: 0.7;
+	transition: 0.5s;
+}
+section .navigation li:hover
+{
+	opacity: 1;
+}
+section .navigation li img
+{
+	width: 120px;
+	transition: 0.5s;
+}
+section .navigation li img:hover
+{
+	width: 200px;
+    }
+
+    h1{
+        color:rgb(255, 230, 0) ;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        margin-top: 0em;
+        
+    }
+    h2{
+        color: dimgray;
+        font-weight:normal;
+    }
+    h3{
+        color: rgb(255, 230, 0);
+        
+    
+      }
+      p
+         {
+           color: dimgray;
+           font-weight:normal;
+         }
+    header {
+        background-color: rgb(255, 230, 0);
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        line-height: 1.2;
+        padding: 0vw 0em;
+        text-align: center;
+        border-radius: 1px;
+        box-shadow: 0 8px 16px 0 rgb(175, 175, 175), 0 6px 20px 0 rgba(0,0,0,0.19);
+        
+      }
+
+      .baslıklar {
+            text-align: center;
+            font-size: 40px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 50px;
+            margin-left: 1px;
+            margin-right: 1px;
+            letter-spacing: 10px;
+            text-decoration: none;
+            padding: 1px;
+            padding-bottom: 20px;
+            border-radius: 1px;
+        }
+        .sosyal 
+        {
+           position: absolute;
+           margin-top: 30px;
+           margin-bottom: 10px;
+           height: 30px;
+           left: 450px;
+           text-align:center;
+        }
+        .kampanya img
+        {
+            width: 330px;
+            height: 260px;
+            margin-left: 70px;
+            margin-right: 0px;
+        }
